@@ -26,8 +26,10 @@ public class Primes {
                 }
             }
         int count = 0;
+        System.out.println("Prime numbers up to " + n + ":");
         for(int i = 0; i < isPrime.length; i++) {
             if(isPrime[i] == true) {
+                System.out.println(i);
                 count ++;
             }
         

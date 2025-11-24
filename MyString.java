@@ -23,17 +23,11 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        for(int i = 0; i < str2.length(); i++) {
-            boolean contain = false;
-            for(int j = 0; j < str1.length(); j++) {
-                if(str1.indexOf(str2.charAt(i)) != -1) {
-                    contain = true;
-                }
-            }
-            if(!contain) {
-                return false;
-            }
+        if(str1.indexOf(str2) != -1) {
+            return true;
         }
-        return true;
+        else {
+            return false;
+        }
     }
 }
